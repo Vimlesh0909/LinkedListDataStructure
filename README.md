@@ -1,1 +1,1 @@
-# LinkedListDataStructure - all data structure and algorithim imlementation using kotlin
+# LinkedListDataStructure - all data structure and algorithims implementation using kotlin
