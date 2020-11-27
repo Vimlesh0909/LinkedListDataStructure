@@ -10,14 +10,14 @@ class QueueWithArray(capacity:Int) {
     fun isEmpty():Boolean{
         return front==-1
     }
-    fun enqueue(value:Any?){
+    fun enQueue(value:Any?){
         if (isfull())return
         else
         {
             q[++rear]=value
         }
     }
-    fun qequeue(){
+    fun deQueue(){
         if (isEmpty())return
         else{
             q[++front]
@@ -33,11 +33,11 @@ class QueueWithArray(capacity:Int) {
 
 fun main(){
     var queue=QueueWithArray(100)
-    queue.enqueue(1)
-    queue.enqueue(2)
-    queue.enqueue(3)
-    queue.enqueue(4)
+    queue.enQueue(1)
+    queue.enQueue(2)
+    queue.enQueue(3)
+    queue.enQueue(4)
     println(queue.getFront())
-    queue.qequeue()
+    queue.deQueue()
     println(queue.getFront())
 }
